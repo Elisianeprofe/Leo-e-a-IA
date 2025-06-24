@@ -1,1 +1,80 @@
+:root {
+    --cor-fundo: #1A2E40;       /* Azul Profundo para o fundo principal */
+    --cor-principal: #F8F9FA;    /* Cinza Claro para o background dos elementos principais (caixas) */
+    --cor-secundaria: #DC3545;   /* Vermelho Queimado para alertar sobre a rota de plágio/erro */
+    --cor-destaque: #28A745;     /* Verde Esmeralda para sucesso/aprendizado/inovação */
+    --cor-texto: #1A2E40;        /* Azul Profundo para o texto (contrasta bem com o cinza claro) */
+    --cor-alternativa: #FFC107;  /* Amarelo Ouro para os botões de alternativa */
+    --cor-hover: #e0a800;        /* Um tom mais escuro para o hover do amarelo */
+}
+body {
+    /* O fundo da página inteira será o azul profundo */
+    background-color: var(--cor-fundo);
+    /* A cor padrão do texto no corpo (se não for sobrescrita por outros elementos) */
+    color: var(--cor-principal); /* Usando o cinza claro para texto em fundo escuro */
+    /* Para centralizar o conteúdo da caixa principal na tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Garante que o corpo ocupa toda a altura da janela, permitindo centralização vertical */
+    min-height: 100vh;
+    /* Remove margens padrão do navegador */
+    margin: 0;
+    /* Uma fonte mais agradável */
+    font-family: sans-serif;
+}
 
+.caixa-principal {
+    /* O fundo da caixa onde o conteúdo da história estará */
+    background-color: var(--cor-principal);
+    /* Ocupa 90% da largura disponível */
+    width: 90%;
+    /* Centraliza o texto dentro da caixa */
+    text-align: center;
+    /* Espaçamento interno para o conteúdo da caixa */
+    padding: 20px;
+    /* Adicionando um pouco de estilo para ela se destacar */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    max-width: 600px; /* Limita a largura máxima para não ficar muito esticado em telas grandes */
+}
+
+h1 {
+    /* A cor para o título principal da sua história */
+    color: var(--cor-destaque); /* O verde esmeralda para um toque de inovação */
+    /* Ajuste de tamanho e margem para o título */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Exemplo de como as caixas de perguntas e alternativas poderiam ser estilizadas */
+.caixa-perguntas {
+    color: var(--cor-texto); /* Texto do enunciado será o azul profundo */
+    font-size: 1.2em;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--cor-principal); /* Fundo igual à caixa principal */
+    border-radius: 5px;
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 20px;
+}
+
+.alternativa-botao {
+    background-color: var(--cor-alternativa); /* Amarelo ouro para os botões */
+    color: var(--cor-texto); /* Texto em azul profundo para contraste */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+.alternativa-botao:hover {
+    background-color: var(--cor-hover); /* Tom mais escuro no hover */
+}
