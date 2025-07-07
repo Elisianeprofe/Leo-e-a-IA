@@ -9,17 +9,17 @@ const perguntas = [
         enunciado: "Leo olhava para a tela do computador, um vácuo criativo em sua mente. O prazo para o projeto de história, sobre as civilizações antigas, se aproximava rapidamente. Ele precisava de algo impactante, algo que realmente se destacasse. Enquanto pesquisava, um anúncio pop-up chamou sua atenção: 'Artificium: Crie Imagens e Vídeos com IA em Segundos!'. O que Leo faz?",
         alternativas: [
             {
-                texto: "A) Ignora o anúncio, preferindo focar na pesquisa tradicional.",
+                texto: " Ignora o anúncio, preferindo focar na pesquisa tradicional.",
                 afirmacao: "Leo decide focar no método de pesquisa tradicional."
             }
-            // Removed the AI option to simplify to a single path.
+            
         ]
     },
     {
         enunciado: "Leo decide que a IA é apenas uma distração e se concentra em métodos tradicionais. Ele vai à biblioteca, pesquisa em livros e artigos acadêmicos. Passa horas lendo, fazendo anotações detalhadas e organizando suas ideias. Ele cria um roteiro visual para seu projeto, desenhando à mão esboços de mapas e cenas históricas para ilustrar seus pontos. Ele se dedica a entender cada detalhe das civilizações antigas, buscando diferentes perspectivas e informações para enriquecer seu trabalho.",
         alternativas: [
             {
-                texto: "A) Apresentar o trabalho com base em sua pesquisa tradicional.",
+                texto: "Apresentar o trabalho com base em sua pesquisa tradicional.",
                 afirmacao: "Leo apresenta um trabalho bem pesquisado e original."
             }
         ]
@@ -44,6 +44,7 @@ function mostraPergunta() {
         mostraResultado();
         return;
     }
+}
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
      caixaAlternativas.textContent = "";
