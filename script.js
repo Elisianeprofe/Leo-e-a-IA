@@ -4,137 +4,110 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
-// Define the simplified story questions and their alternatives.
-// This version leads to a single, linear ending.
 const perguntas = [
     {
-        enunciado: "Leo olhava para a tela do computador, um vácuo criativo em sua mente. O prazo para o projeto de história, sobre as civilizações antigas, se aproximava rapidamente. Ele precisava de algo impactante, algo que realmente se destacasse. Enquanto pesquisava, um anúncio pop-up chamou sua atenção: 'Artificium: Crie Imagens e Vídeos com IA em Segundos!'. O que Leo faz?",
+        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
         alternativas: [
             {
-
-                texto: "A) Ignora o anúncio, preferindo focar na pesquisa tradicional.",
-                afirmacao: "Leo decide focar no método de pesquisa tradicional."
+                texto: "Isso é assustador!",
+                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
             },
             {
-                texto: "B) Clica no anúncio, mas decide que não é o momento para distrações.",
-                afirmacao: "Leo considera a IA, mas mantém o foco na pesquisa tradicional."
-
-                texto: "A) Clica no anúncio, curioso sobre o Artificium.",
-                afirmacao: "Leo decide explorar a IA."
-            },
-            {
-                texto: "B) Ignora o anúncio, preferindo focar na pesquisa tradicional.",
-                afirmacao: "Leo decide não usar a IA."
-
+                texto: "Isso é maravilhoso!",
+                afirmacao: "Quis saber como usar IA no seu dia a dia."
             }
         ]
     },
     {
-        enunciado: "Leo clica no anúncio e a interface do Artificium se abre. Era impressionante. Com apenas algumas palavras, a IA gerava imagens e pequenos vídeos com uma qualidade surpreendente. Ele começou a experimentar, inserindo termos como 'pirâmides do Egito' e 'templos gregos'. A tela ganhava vida com representações vívidas e precisas. Uma ideia começou a borbulhar em sua mente: usar o Artificium para criar os elementos visuais do seu projeto. Como Leo decide usar o Artificium?",
+        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
         alternativas: [
             {
-                texto: "A) Apresentar o trabalho com base em sua pesquisa tradicional.",
-                afirmacao: "Leo apresenta um trabalho bem pesquisado e original."
+                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
             },
             {
-                texto: "B) Revisar os últimos detalhes e ensaiar a apresentação.",
-                afirmacao: "Leo revisa e prepara-se cuidadosamente para a apresentação."
+                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
             }
         ]
     },
     {
-        enunciado: "Leo decide que o Artificium seria uma ferramenta, não um substituto para seu próprio esforço. Ele usa a IA para visualizar conceitos complexos, como a construção de aquedutos romanos ou a vida diária em Atenas. As imagens e vídeos gerados o ajudam a compreender melhor os detalhes, e ele os usa como inspiração para suas próprias pesquisas e redação. Ele mergulha em livros e artigos, validando as informações e adicionando sua própria análise crítica. O trabalho se torna uma fusão perfeita de sua pesquisa aprofundada com os recursos visuais impressionantes da IA. No dia da apresentação, Leo não apenas mostra as imagens e vídeos incríveis, mas também explica com clareza o processo de criação de cada um e a pesquisa por trás deles.",
+        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
         alternativas: [
             {
-                texto: "A) Obrigado, professora!",
-                afirmacao: "Leo obteve sucesso através de seu próprio esforço e dedicação, tirando uma nota excelente."
+                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
             },
             {
-                texto: "B) Perguntar sobre a nota e o feedback detalhado.",
-                afirmacao: "Leo busca feedback para continuar aprimorando seu aprendizado."
+                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
             }
         ]
     },
     {
-        enunciado: "Leo, seduzido pela facilidade do Artificium, começa a gerar uma avalanche de imagens e vídeos, colando-os diretamente em seu trabalho sem muito critério. Ele mal lê o conteúdo que a IA produz e não se aprofunda na pesquisa. O trabalho visualmente é deslumbrante, mas carece de coerência e substância. Quando a professora faz perguntas sobre detalhes específicos ou a lógica por trás de certas imagens, Leo gagueja, incapaz de justificar suas escolhas ou demonstrar conhecimento.",
+        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
         alternativas: [
             {
-                texto: "Enfrentar as consequências de sua escolha.",
-                afirmacao: "Leo é pego plagiando e enfrenta as consequências."
+                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+            },
+            {
+                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
+                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
             }
         ]
     },
     {
-        enunciado: "Leo decide que a IA é apenas uma distração e se concentra em métodos tradicionais. Ele vai à biblioteca, pesquisa em livros e artigos acadêmicos. Passa horas lendo, fazendo anotações detalhadas e organizando suas ideias. Ele cria um roteiro visual para seu projeto, desenhando à mão esboços de mapas e cenas históricas para ilustrar seus pontos. Ele se dedica a entender cada detalhe das civilizações antigas, buscando diferentes perspectivas e informações para enriquecer seu trabalho.",
+        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
         alternativas: [
             {
-                texto: "Apresentar o trabalho com base em sua pesquisa tradicional.",
-                afirmacao: "Leo tem sucesso com seu trabalho tradicionalmente feito."
+                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
+                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+            },
+            {
+                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
+                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
             }
         ]
-    }
+    },
 ];
 
-// Initialize game state variables.
-let atual = 0; // Current question index.
-let perguntaAtual; // Object for the current question.
-let historiaFinal = ""; // Stores the affirmation of the last selected option.
 
-// Function to display the current question.
+let atual = 0;
+let perguntaAtual;
+let historiaFinal = "";
+
 function mostraPergunta() {
-    // Check if all questions have been displayed.
     if (atual >= perguntas.length) {
-        mostraResultado(); // If so, display the final result.
-        return; // Exit the function.
+        mostraResultado();
+        return;
     }
-
-    perguntaAtual = perguntas[atual]; // Get the current question object.
-    caixaPerguntas.textContent = perguntaAtual.enunciado; // Display the question text.
-
-    // Clear previous alternatives and display new ones.
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
     mostraAlternativas();
 }
 
-// Function to display the alternatives for the current question.
-function mostraAlternativas() {
-    // Clear the HTML content of the alternatives box to remove previous buttons.
-    caixaAlternativas.innerHTML = "";
-
-    // Iterate over the alternatives of the current question and create buttons.
-    for (const alternativa of perguntaAtual.alternativas) {
-        const botaoAlternativa = document.createElement("button");
-        botaoAlternativa.textContent = alternativa.texto;
-        // Add a class for styling (if you have it in your CSS).
-        botaoAlternativa.classList.add("alternativa-botao");
-
-        // Add a click event listener to call respostaSelecionada.
-        // Pass the complete 'alternativa' object.
-        botaoAlternativa.addEventListener("click", () => respostaSelecionada(alternativa));
-        caixaAlternativas.appendChild(botaoAlternativa);
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 
-// Function called when an alternative is selected.
 function respostaSelecionada(opcaoSelecionada) {
-    // Access 'afirmacao' (singular) and store it.
-    historiaFinal = opcaoSelecionada.afirmacao;
-
-    // Advance to the next question (currently sequentially).
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + " ";
     atual++;
-    // Display the next question.
     mostraPergunta();
 }
 
-// Function to display the final result.
 function mostraResultado() {
-    // Add a class for styling the final state (e.g., hiding game elements).
-    caixaPrincipal.classList.add("fim-historia");
-    caixaPerguntas.textContent = "A jornada de Leo chegou ao fim!";
-    caixaAlternativas.innerHTML = ""; // Ensure no buttons are left at the end.
-    caixaResultado.style.display = "block"; // Make the result box visible.
-    textoResultado.textContent = historiaFinal; // Display the final affirmation as the result.
+    caixaPerguntas.textContent = "Em 2049...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
 }
 
-// Start the story when the script is loaded.
 mostraPergunta();
-
