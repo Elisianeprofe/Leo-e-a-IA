@@ -164,7 +164,7 @@ function respostaSelecionada(opcaoSelecionada) {
 
 // Function to display the final result.
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049... Achou assustador pensar que máquinas agora poderiam mudar o mundo. Percebeu que a IA consegue explicar termos complicados de forma simplificada e isso ajudou muito suas pesquisas sobre assuntos complexos. Notou que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes.";
+    caixaPerguntas.textContent = " Achou assustador pensar que máquinas agora poderiam mudar o mundo. Percebeu que a IA consegue explicar termos complicados de forma simplificada e isso ajudou muito suas pesquisas sobre assuntos complexos. Notou que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes.";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
