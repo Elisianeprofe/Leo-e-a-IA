@@ -164,17 +164,9 @@ function respostaSelecionada(opcaoSelecionada) {
 
 // Function to display the final result.
 function mostraResultado() {
-    // Hide the main question/alternatives area.
-    caixaPerguntas.textContent = "Fim da História!";
-    caixaAlternativas.innerHTML = "";
-    caixaPrincipal.classList.add("fim-historia"); // Add class for final styling.
-
-    // Show the result box and display the accumulated story.
-    caixaResultado.style.display = "block";
-    textoResultado.textContent = "Sua jornada com Leo terminou assim: " + historiaFinal + " Lembre-se: A inteligência artificial é uma ferramenta poderosa. Use-a com consciência e responsabilidade para construir um futuro melhor.";
-
-    // You can add more complex logic here to determine a specific ending message
-    // based on the 'historiaFinal' content, if desired.
+    caixaPerguntas.textContent = "Em 2049... Achou assustador pensar que máquinas agora poderiam mudar o mundo. Percebeu que a IA consegue explicar termos complicados de forma simplificada e isso ajudou muito suas pesquisas sobre assuntos complexos. Notou que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes.";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
 }
 
 // Start the story by showing the initial scene when the script is loaded.
