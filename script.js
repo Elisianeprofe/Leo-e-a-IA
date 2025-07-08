@@ -171,7 +171,7 @@ function mostraResultado() {
 
     // Show the result box and display the accumulated story.
     caixaResultado.style.display = "block";
-    textoResultado.textContent = "Sua jornada com Leo terminou assim: " + historiaFinal;
+    textoResultado.textContent = "Sua jornada com Leo terminou assim: " + historiaFinal + " Lembre-se: A inteligência artificial é uma ferramenta poderosa. Use-a com consciência e responsabilidade para construir um futuro melhor.";
 
     // You can add more complex logic here to determine a specific ending message
     // based on the 'historiaFinal' content, if desired.
